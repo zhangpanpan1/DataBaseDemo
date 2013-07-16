@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:scrollbars="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下面输入要插入或是要更新的数据" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv" />
+
+    <EditText
+        android:id="@+id/clum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:layout_toRightOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/bloo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:layout_toRightOf="@+id/clum" />
+
+     <Button
+        android:id="@+id/updata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:text="updata" />
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updata"
+        android:text="Insert" />
+
+    <Button
+        android:id="@+id/query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/insert"
+        android:text="query" />
+  <TextView 
+    android:id="@+id/id"
+    android:layout_below="@+id/query"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="要更新或是删除数据的id号 参考上面显示"
+    />
+
+    <EditText
+    android:id="@+id/edit_id"
+    android:layout_below="@+id/id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     />
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_id"
+        android:text="update" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update"
+        android:text="delete" />
+
+</RelativeLayout>
